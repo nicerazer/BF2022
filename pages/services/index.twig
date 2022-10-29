@@ -59,7 +59,7 @@
         </label>
     </div>
 
-    {% for category in serviceCategoryList %}    
+    {% for category in serviceCategoryList %}
         {% if category['name'] %}
         <div data-filter-table-category-id="{{ category.id }}" class="shadow-md mt-4 rounded-box overflow-hidden bg-white" >
         <div class="bg-neutral-light-200 px-4 py-4 text-2xl text-neutral-dark-700 font-light">
@@ -94,7 +94,7 @@
                     <td class="align-baseline text-end px-4 pb-2">{{ service['max'] }}</td>
                     <td class="align-baseline text-end px-4 pb-2">{{ service['average_time'] }}</td>
                     <td class="align-baseline text-end px-4 pb-2">
-                        {% if not service['description'] is empty %}
+                        {% if service['description'] not empty %}
                         <label class="btn btn-secondary btn-sm w-32" for="modal-description" @click="modalContentServiceId = '{{ service.id }}'">Buka</label>
                         <template x-teleport="#modal-description-content">
                             <div x-show="modalContentServiceId == '{{ service.id }}'">

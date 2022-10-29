@@ -54,6 +54,9 @@ module.exports = {
       '2xl': '1536px'
     },
     extend: {
+      dropShadow: {
+        'sharp': '4px 4px 0px #515151'
+      },
       colors: {
         'neutral-light-100': localColors.neutral.light['100'],
         'neutral-light-200': localColors.neutral.light['200'],
@@ -96,7 +99,7 @@ module.exports = {
           'base-300': '#E6F1FA',
           'base-content': '#002F4B',
           
-          '--rounded-box': '.75rem', // border radius rounded-box utility class, used in card and other large boxes
+          '--rounded-box': '.5rem', // border radius rounded-box utility class, used in card and other large boxes
           '--rounded-btn': '0.35rem', // border radius rounded-btn utility class, used in buttons and similar element
           '--rounded-badge': '1.9rem', // border radius rounded-badge utility class, used in badges and similar
           '--animation-btn': '0.15s', // duration of animation when you click on button

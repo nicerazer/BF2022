@@ -24,7 +24,7 @@
             </div>
           {% endif %} #}
 
-  {% if success or error %}
+  {% if false and success or error %}
     <div class="absolute w-full z-20 max-w-5xl sm:mx-auto inset-x-0 my-4 sm:my-12 px-2 opacity-95 hover:opacity-80 transition-opacity"
       x-data="{ show: true, isSuccess: {{ success ? 'true' : 'false' }} }">
       <div class="alert shadow-lg w-full" :class="isSuccess ? 'alert-success':'alert-error'" x-show="show">
@@ -46,10 +46,10 @@
   <div class="flex md:items-start h-full py-3 md:py-5 relative">
     <div class="card rounded-box bg-white shadow-lg sm:w-9/12 mx-auto">
       <div class="relative card-body flex">
-        <img src="https://cdn.mypanel.link/af5a5a/ty4lrn0tss4g2dop.jpg" alt="Holding a phone" class="absolute -bottom-16 w-[44rem] -left-24 opacity-40 xl:opacity-80">
+        <img style="opacity: 0;" src="https://cdn.mypanel.link/af5a5a/ty4lrn0tss4g2dop.jpg" alt="Holding a phone" class="absolute -bottom-16 w-[44rem] -left-24 opacity-40 xl:opacity-80">
         <div class="absolute max-w-lg">
           {# <a class="hidden lg:flex mb-4" href="/">
-            <img src="https://cdn.mypanel.link/af5a5a/5poolxxjg4ox7pog.png" alt="Logo TokeyFollower" class="img-fluid float-center">
+            <img src="https://cdn.mypanel.link/171dsa/ha3i98z3uc58cm3u.jpg" alt="Logo LubukFollowers" class="img-fluid float-center">
           </a> #}
           <div id="signup-illustrate" class="h-full relative">
             <div class="">
@@ -62,11 +62,11 @@
         </div>
         <div class="flex flex-col md:flex-row relative right-0 self-end max-w-lg lg:max-w-2xl">
           <a class="mb-4 mr-8 md:ml-auto" href="/">
-            <img src="https://cdn.mypanel.link/af5a5a/5poolxxjg4ox7pog.png" alt="Logo TokeyFollower" class="img-fluid float-center">
+            <img src="https://cdn.mypanel.link/171dsa/ha3i98z3uc58cm3u.jpg" alt="Logo LubukFollowers" class="img-fluid float-center">
           </a>
           <div>
             <div class="">
-              <h2 class="mb-4 text-2xl font-extrabold">Mulakan pengalaman anda di TokeyFollower hari ini!</h2>
+              <h2 class="mb-4 text-2xl font-extrabold">Mulakan pengalaman anda di LubukFollowers hari ini!</h2>
               <p class="mb-4 text-sm text-neutral-dark-300">Servis yang murah. Sistem yang mudah. Server yang pantas. Bina sales dengan servis kami. Sudah ada akaun? <a href="/" class="link link-primary">Log Masuk</a></p>
             </div>
             <form action="" method="post">
