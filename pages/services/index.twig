@@ -94,7 +94,7 @@
                     <td class="align-baseline text-end px-4 pb-2">{{ service['max'] }}</td>
                     <td class="align-baseline text-end px-4 pb-2">{{ service['average_time'] }}</td>
                     <td class="align-baseline text-end px-4 pb-2">
-                        {% if service['description'] not empty %}
+                        {% if service['description']|length > 0 %}
                         <label class="btn btn-secondary btn-sm w-32" for="modal-description" @click="modalContentServiceId = '{{ service.id }}'">Buka</label>
                         <template x-teleport="#modal-description-content">
                             <div x-show="modalContentServiceId == '{{ service.id }}'">

@@ -34,7 +34,7 @@
                 </svg>
               </label>
             </div>
-            <div class="md:px-2 md:mx-2"><img src="https://cdn.mypanel.link/171dsa/pmsz37zkkeqdae3l.png" alt="Logo" class="w-24"></div>
+            <div class="md:px-2 md:mx-2"><img src="https://cdn.mypanel.link/qasf8y/pn9j7p860knl0dkg.png" alt="Logo" class="w-24"></div>
 
             {# Middle, main menu items #}
             <nav class="hidden md:block" x-data="authNavbarData">
@@ -116,8 +116,8 @@
               <div class="hidden md:flex divider divider-horizontal my-4 mx-0"></div>
               <ul class="menu menu-horizontal">
                 <li class="dropdown dropdown-end">
-                  <label tabindex="0" class="btn btn-ghost rounded-lg text-secondary-content mx-1 indicator py-0 h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
+                  <label tabindex="0" class="btn btn-secondary rounded-lg text-secondary-content mx-1 indicator py-0 h-8 my-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
                       <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 11-1.061-1.061 3 3 0 112.871 5.026v.345a.75.75 0 01-1.5 0v-.5c0-.72.57-1.172 1.081-1.287A1.5 1.5 0 108.94 6.94zM10 15a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
                     </svg>
 
@@ -126,9 +126,9 @@
                     <img src="https://nicerazer.github.io/LF2022/src/img/generic-megaphone.svg" alt="" class="w-12 h-12 translate-x-1 -translate-y-1 scale-110">
                   </label> #}
                   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a target="_blank" href="https://telegra.ph/%F0%9D%98%9B%F0%9D%98%B6%F0%9D%98%B5%F0%9D%98%B0%F0%9D%98%B3%F0%9D%98%AA%F0%9D%98%A2%F0%9D%98%AD-%F0%9D%98%9C%F0%9D%98%B4%F0%9D%98%A6%F0%9D%98%B3-%F0%9D%98%8E%F0%9D%98%B6%F0%9D%98%AA%F0%9D%98%A5%F0%9D%98%A6-10-29">Panduan Utama</a></li>
-                    <li><a target="_blank" href="https://telegra.ph/%F0%9D%98%97%F0%9D%98%A2%F0%9D%98%AF%F0%9D%98%A5%F0%9D%98%B6%F0%9D%98%A2%F0%9D%98%AF-%F0%9D%98%9C%F0%9D%98%B4%F0%9D%98%A6%F0%9D%98%B3%F0%9D%98%B4--%F0%9D%98%88%F0%9D%98%A7%F0%9D%98%A7%F0%9D%98%AA%F0%9D%98%AD%F0%9D%98%AA%F0%9D%98%A2%F0%9D%98%B5%F0%9D%98%A6-10-02">Panduan Reseller</a></li>
-                    <li><a href="https://wa.me/message/FRUOQVY53ZXVN1" target="_blank" class="italic">Customer Service</a></li>
+                    <li><a target="_blank" href="https://telegra.ph/1-11-24-14">Panduan Utama</a></li>
+                    <li><a target="_blank" href="https://telegra.ph/1-11-24-14">Panduan Reseller</a></li>
+                    <li><a href="https://wa.me/message/DVM5RJGMWVMEH1" target="_blank" class="italic">Customer Service</a></li>
                   </ul>
                 </li>
                 {# <li>
@@ -139,8 +139,8 @@
                   </div>
                 </li> #}
                 <li>
-                  <a href="https://telegra.ph/%F0%9D%98%93%F0%9D%98%B6%F0%9D%98%A3%F0%9D%98%B6%F0%9D%98%AC-%F0%9D%98%8D%F0%9D%98%B0%F0%9D%98%AD%F0%9D%98%AD%F0%9D%98%B0%F0%9D%98%B8%F0%9D%98%A6%F0%9D%98%B3%F0%9D%98%B4-%F0%9D%98%95%F0%9D%98%A6%F0%9D%98%B8%F0%9D%98%B4-10-30" target="_blank">
-                    <img src="https://nicerazer.github.io/LF2022/src/img/generic-megaphone.svg" alt="Megaphone / News" class="w-10 h-10 translate-x-1 -translate-y-1 scale-110">
+                  <a class="btn-secondary w-16 rounded-lg relative" href="https://t.me/bilalfollowers" target="_blank">
+                    <img src="https://nicerazer.github.io/LF2022/src/img/generic-megaphone.svg" alt="Megaphone / News" class="mx-auto translate-x-1 -translate-y-1 scale-110">
                   </a>
                 </li>
 
@@ -197,8 +197,8 @@
               <!-- The inner alertbox -->
               <div class="absolute w-full px-8 md:px-16 xl:px-28 opacity-95 hover:opacity-80 transition-opacity flex flex-col gap-2 z-20 {{ page['url'] == '/viewticket' ? 'mt-8' : '' }}" id="alert-container-authed">
               </div>
-              {{ content }}
-              {# {% block content %}{% endblock %} #}
+              {# {{ content }} #}
+              {% block content %}{% endblock %}
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
                 </svg>
               </label>
-              <img src="https://cdn.mypanel.link/171dsa/pmsz37zkkeqdae3l.png" alt="Logo" class="w-24">
+              <img src="https://cdn.mypanel.link/qasf8y/pn9j7p860knl0dkg.png" alt="Logo" class="w-24">
             </div>
             <div>
               <div class="rounded-box px-8 py-6 mb-2 bg-slate-800 text-white relative overflow-clip">
@@ -302,7 +302,7 @@
                       </ul>
                   </div>
       
-                  <a class="mr-8 w-24 md:w-40" href="/"><img src="https://cdn.mypanel.link/171dsa/pmsz37zkkeqdae3l.png" alt="Logo"></a>
+                  <a class="mr-8 w-24 md:w-40" href="/"><img src="https://cdn.mypanel.link/qasf8y/pn9j7p860knl0dkg.png" alt="Logo"></a>
               </div>
               <ul class="hidden lg:flex items-center gap-2 mr-auto">
                   <li><a class="btn btn-ghost" href="/terms">Terma</a></li>
@@ -321,8 +321,8 @@
               </a>
           </nav>
         {% endif %}
-        {{ content }}
-        {# {% block content %}{% endblock %} #}
+        {# {{ content }} #}
+        {% block content %}{% endblock %}
       </div>
     {% endif %}
 
@@ -342,7 +342,7 @@
           <div class="absolute w-full px-4 md:px-8 opacity-95 hover:opacity-80 transition-opacity flex flex-col gap-2 z-20 inset-x-0" id="alert-container-guest"></div>
 
           <label for="login-modal" class="btn btn-sm btn-circle absolute right-6 top-8 sm:right-10 sm:top-10">✕</label>        
-          <div class="mb-10 w-36"><img src="https://cdn.mypanel.link/171dsa/pmsz37zkkeqdae3l.png" alt="Logo"></div>
+          <div class="mb-10 w-36"><img src="https://cdn.mypanel.link/qasf8y/pn9j7p860knl0dkg.png" alt="Logo"></div>
           <h3 class="mb-6 text-3xl font-bold">Log Masuk</h3>
           <form method="post" action="{{ page['url'] }}">
             <input type="hidden" name="_csrf" value="{{csrftoken}}">
